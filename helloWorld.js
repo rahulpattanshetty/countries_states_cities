@@ -1,0 +1,5 @@
+(function() {
+	$.fn.helloworld = function() {
+		
+	}
+})
