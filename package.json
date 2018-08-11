@@ -4,6 +4,6 @@
   "version": "0.1",
   "description": "Select Country state and city",
   "keywords": ["country","state","city"],
-  "homepage": "https://github.com/rahulpattanshetty/Location.git",
+  "homepage": "https://github.com/rahulpattanshetty/countries_states_cities.git",
   "dependencies": {}
 }
