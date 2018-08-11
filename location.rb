@@ -18,13 +18,13 @@ class Location
 		end
 	end
 	def self.countries
-		file = File.read('app/services/location/countries.json')
+		file = File.read('countries.json')
 		data_hash = JSON.parse(file)
 		return data_hash["countries"]
 	end
 
 	def self.states(country_id)
-		file = File.read('app/services/location/states.json')
+		file = File.read('states.json')
 		data_hash = JSON.parse(file)
 		states = []
 		data_hash["states"].each do |state|
@@ -36,7 +36,7 @@ class Location
 	end
 
 	def self.cities(state_id)
-		file = File.read('app/services/location/cities.json')
+		file = File.read('cities.json')
 		data_hash = JSON.parse(file)
 		cities = []
 		data_hash["cities"].each do |city|
@@ -49,7 +49,7 @@ class Location
 
 
 	def self.read_csv
-		file = CSV.read('app/services/location/countries_states_cities.csv')
+		file = CSV.read('countries_states_cities.csv')
 		file.shift
 		countries_array = []
 		states_array = []
@@ -82,7 +82,7 @@ class Location
 	end
 
 	def self.write_file(file_name,data)
-		File.open("app/services/location/#{file_name}", "w") do |f|
+		File.open("#{file_name}", "w") do |f|
 	 		f.truncate(0)  
 			f.write(data.to_json)
 			f.close  
