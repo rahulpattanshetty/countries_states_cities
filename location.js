@@ -50,13 +50,13 @@ function getCountriesStatesCities() {
 
 function getStates(countryId,statesHandle) {
 	var countryStates = [];
-	states.forEach(function(state) {if (state.country_id == countryId) {countryStates.push(state)}})
+	states.forEach(function(state) {if (state.country_id == countryId) {countryStates.push(state);}})
 	load(statesHandle,countryStates);
 }
 
 function getCities(stateId,citiesHandle) {
 	var stateCity = [];
-	cities.forEach(function(city) {if (city.state_id == stateId) { stateCity.push(city)}});
+	cities.forEach(function(city) {if (city.state_id == stateId) { stateCity.push(city);}});
 	load(citiesHandle,stateCity);
 }
 
