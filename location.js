@@ -6,12 +6,8 @@ var cities = [{"id":"1","name":"Bombuflat","state_id":"1"},{"id":"2","name":"Gar
 
 function getCountries() {
  	var countriesHandle = document.getElementById("countries");
- 	//countryHandle.options[0] = new Option('Select Country','-1');
  	setInitialOption(countriesHandle,"Country");
- // 	for (var i=0; i<countries.length; i++) {
-	// 	countryHandle.options[countryHandle.length] = new Option(countries[i].name,countries[i].name);
-	// }
-	load(countriesHandle,countries);
+ 	load(countriesHandle,countries);
  } 
 function getCountriesStates() {
 	var countriesHandle = document.getElementById("countries");
