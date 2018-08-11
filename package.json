@@ -1,0 +1,11 @@
+{
+  "filename": "countriesStatesCites.js",
+  "name": "countries-states-cities",
+  "version": "0.1",
+  "description": "Select Country state and city",
+  "keywords": ["country","state","city"],
+  "homepage": "https://github.com/ErikSchierboom/knockout-paging",
+  "dependencies": { 
+    "knockout": "^3.2.0"
+  }
+}
