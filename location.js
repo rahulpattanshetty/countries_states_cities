@@ -17,11 +17,6 @@ function getCountriesStates() {
 	var statesHandle = document.getElementById("states");
 	setInitialOption(countriesHandle,"Country");
 	setInitialOption(statesHandle,"State");
-	// countriesHandle.options[0] = new Option('Select Country', '-1');
-	//statesHandle.options[0] = new Option('Select State', '-1');
-	// for (var i = 0; i < countries.length; i++) {
-	// 	countriesHandle.options[countriesHandle.length] = new Option(countries[i].name, countries[i].id);
-	// }
 	load(countriesHandle,countries);
 	if (statesHandle) {
 		countriesHandle.onchange = function() {
